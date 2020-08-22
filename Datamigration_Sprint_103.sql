@@ -17,3 +17,9 @@ from PartsOrderDetail pod
 inner join PartsOrderheader poh on pod.PartsOrderHeaderId=poh.Id
 where Pending='Y' and Isnull(Part_NO,'')<>'' and 
 not exists(select 1 from PartsOrderSubstitueMapping pos where pos.PartsOrderDetailId=pod.id)
+
+/*
+Added the commentliner at end
+*/
+
+
